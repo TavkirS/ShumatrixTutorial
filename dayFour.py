@@ -65,7 +65,7 @@
 # a= 6
 # b=a
 
-# print(a is  b)
+# print(a is b)
 
 
 # 6) Membership Operator
@@ -74,7 +74,7 @@
 
 # am= [1,2,3]
 # print(1 in am)
-# print(5 not in am)
+# print(3 not in am)
 
 
 
