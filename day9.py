@@ -45,7 +45,7 @@ text ="very very memmorable day"
 # print(text.find("y"))
 
 # count() kitne baar ek wordletter aaya hai
-print(text.count("very"))
+# print(text.count("very"))
 
 # spilt() string ko list me tod dega
 
@@ -85,6 +85,89 @@ name3 ="sumer"
 
 text="my name is sarthak"
 # print(text.title())
+
+
+# swapcase() Capital <---> small switch karta hai
+
+myname= "taukir"
+# print(myname.swapcase())
+
+myname2= "TAVKIR"
+# print(myname2.swapcase())
+
+myname3= "TAvKiR"
+# print(myname3.swapcase())
+
+# center() text ko beach me align karega
+
+# print(myname.center(100,"_"))
+
+
+# format() string value me insert karega (Most Imp)
+
+name4 = "Kunali"
+age = 20
+
+# print("Happy birthday {} and your age is {} ".format(name4,age))
+
+# F-string (IMPORTANT)
+# below method use in industry to handle the string format this is modern aur fast way to format the string
+# print(f"Happy birthday {name4} and your age is {age}")
+
+
+# escape charater \n ,\t
+
+# print("Hello\nWorld") # new line me shift honga
+# print("Hello\tWorld") # ek tab ki space create hongi
+
+# String Comparison
+
+# print("apple"=="apple")
+
+# string Concatenation string ko jodna
+
+a="Hello"
+b="World"
+print(a+" "+b)
+
+# string repetation string ko repeat karta hai
+
+print("Kunali"*3)
+
+# startwith() check karta hai ki string kisi specific word/letter se start ho raha ya nahi 
+# endswith() check karta hai ki string kisi specific word/letter se khatam/end ho raha ya nahi 
+
+language ="Python Program"
+print(language.startswith("Python"))
+print(language.endswith("Python"))
+
+
+# ===================*****************====================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
