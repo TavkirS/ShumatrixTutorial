@@ -47,6 +47,74 @@ num = 50
 #         print(i)
 
 
+# loop on dict
+
+# student = {"Name":"Aman",
+#            "age":20,
+#            "city":"Delhi"
+#            }
+
+# print(student["Name"])
+
+# for sumer in student:
+#     print(sumer,":",student[sumer])
+
+
+# keys() 
+
+# for i in student.keys():
+#     print(i)
+
+# values()
+# for i in student.values():
+#     print(i)
+
+# items()
+
+# for i , j in student.items():
+#     print(i,"-",j)
+
+# Exercise
+
+# Print numbers from 1 to 30
+
+# for i in range(1,31):
+#     print(i)
+
+# Print Hello Sarthak 8
+# for i in range(1,9):
+#     print("Hello sarthak")
+
+# Print String char
+# string = "Hello Kunali"
+
+# for i in string:
+#     print(i)
+
+# Count total character in a string
+
+clg = "I love to go at FEAT college"
+count = 0
+print(len(clg))
+
+for i in clg:
+    count += 1
+print(count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
