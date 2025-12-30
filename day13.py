@@ -1,11 +1,42 @@
-# for loop
-# Print numbers from 1 to 10 using for loop.
-# Print your name 5 times using for loop.
-# Print even numbers between 1 and 20.
-# Print odd numbers between 1 and 15.
-# Print each character of a string.
-# Print all elements of a list.
-# Find the sum of numbers from 1 to 10.
-# Count total characters in a given string using for loop.
-# Print vowels present in a string.
-# Print keys of a dictionary using for loop.
+# Break and Continue (used in both loop for/while)
+
+# Break loop ko turant band (stop) kardega
+# Break => stop
+
+# Continue current interation ko skip karta hai, but loop band nahi honga
+# continue => skip
+
+# Break while
+
+# i =1
+# while i<= 10:
+#     if i == 6:
+#         break
+#     print(i)
+#     i = i+1
+
+# Break for
+
+# for i in range(1,10):
+#     if i >= 6:
+#         break
+#     print("sarthak waiting")
+#     print(i)
+
+
+# continue while
+
+# i =0
+
+# while i <=10:
+#     i +=1 
+#     if i == 5:
+#         continue
+#     print(i)
+
+# continue for
+
+# for i in range(1,6):
+#     if i ==3:
+#         continue
+#     print(i)
