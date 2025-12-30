@@ -42,22 +42,22 @@ num = 50
 
 # for loop with condition (if)
 
-# for i in range(1,11):
-#     if i % 2 == 0:
-#         print(i)
+for i in range(1,11):
+    if i % 2 == 0:
+        print(i)
 
 
 # loop on dict
 
-# student = {"Name":"Aman",
-#            "age":20,
-#            "city":"Delhi"
-#            }
+student = {"Name":"Aman",
+           "age":20,
+           "city":"Delhi"
+           }
 
 # print(student["Name"])
 
-# for sumer in student:
-#     print(sumer,":",student[sumer])
+for sumer in student:
+    print(sumer,":",student[sumer])
 
 
 # keys() 
@@ -93,13 +93,50 @@ num = 50
 
 # Count total character in a string
 
-clg = "I love to go at FEAT college"
-count = 0
-print(len(clg))
+# clg = "I love to go at FEAT college"
+# count = 0
+# # print(len(clg))
 
-for i in clg:
-    count += 1
-print(count)
+# for i in clg:
+#     count += 1
+# print(count)
+
+# Print vowels from string
+
+# word= "education"
+# print(word)
+
+# for volvel in word:
+#     if volvel in "aeiou":
+#         print(volvel)
+
+
+
+num = "Sumer"
+i=0
+while i < len(num):
+    print(num[i])
+    i +=1 
+
+
+
+listnum = [10,12,13,14]
+i = 0
+while i < len(listnum):
+    print(listnum[i])
+    i +=1
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
