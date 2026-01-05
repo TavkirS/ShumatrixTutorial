@@ -111,7 +111,8 @@ for sumer in student:
 #         print(volvel)
 
 
-
+def hellow_World():
+    print("Hellow World")
 num = "Sumer"
 i=0
 while i < len(num):

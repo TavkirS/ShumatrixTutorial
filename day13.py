@@ -26,13 +26,13 @@
 
 # continue while
 
-# i =0
+i =0
 
-# while i <=10:
-#     i +=1 
-#     if i == 5:
-#         continue
-#     print(i)
+while i <=10:
+    i +=1 
+    if i == 5:
+        continue
+    print(i)
 
 # continue for
 
@@ -40,3 +40,4 @@
 #     if i ==3:
 #         continue
 #     print(i)
+
