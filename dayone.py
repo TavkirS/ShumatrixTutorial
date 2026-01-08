@@ -1,9 +1,10 @@
 # What is python
-# Python is a high-level, easy-to-learn, powerful programming language used for web development, automation, data science, AI, and more.
+# Python is a high-level, easy-to-learn, powerful programming language used 
+# for web development, automation, data science, AI, and more.
 # ===============================
 
 # Print Statement
-# print("Helloo World")
+# print("Helloo Shruti")
 
 # ===============================
 
@@ -11,6 +12,9 @@
 # -----------
 # Python has no command for declaring a variable.
 # A variable is created the moment you first assign a value to it.
+# Pythons predefined keywords should not be variable name (35 predefined "hard" keywords)
+# ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 
+# 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
 name = "Sarthak" 
 
@@ -19,19 +23,23 @@ name = "Sarthak"
 # Naming Rules for Python variables
 # -------------------------
 # myname
-# my_nam
-# myName => camel case
-# MyName1 => pascal case
-# my_name_one  => snake 
+# my_name
+# myNameIs => camel case
+# MyNameIs => pascal case
+# my_name_one  => snake case
 
 # ===============================
 
 # Many Values to Multiple Variables
 # ---------------------------------
 # name1, name2, name3 = "Kunali", "Sarthak" , "Taukir"
-# print(name1)
+
+# name1 = "Kunali"
+# name2 = "Sarthak"
+# name3 = "Taukir"
+# print(name3)
 # name1, name2, name3 = "Sarthak", "Rajesh" , "Taukir"
-# # name1 = name2 = name3 = "Sarthak"
+# name1 = name2 = name3 = "Sarthak"
 # print(name1)
 
 # ===============================
@@ -39,7 +47,7 @@ name = "Sarthak"
 # One Value to Multiple Variables
 # ---------------------------------
 # x = y = z = "Orange"
-# print(x)
+# print(y)
 
 # ===============================
 
@@ -59,15 +67,16 @@ name = "Sarthak"
 # Global Variable
 # ---------------
 # Variables that are created outside of a function (as in all of the examples above) are known as global variables.
-# Global variables can be used by everyone, both inside of functions and outside.
+# Global variables can be used by everwhere throughout the page, both inside of functions and outside.
+# A variable that is declare inside the function is called local variable
+x= "Sarthak is awsome"
 
-# x= "Sarthak is awsome"
+def myfun():
+    global x
+    x="Kunali is awsome"
+    print(x)
 
-# def myfun():
-#     global x
-#     x="Kunali is awsome"
-
-# myfun()
+myfun()
 # print(x)
 # print(x) 
 

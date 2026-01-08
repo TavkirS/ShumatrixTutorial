@@ -11,7 +11,6 @@
 # Set Types:	set,
 # Boolean Type:	bool
  
-
 # Python Numbers
 # -----------------
 # There are three numeric types in Python:
