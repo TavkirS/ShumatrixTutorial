@@ -1,13 +1,13 @@
 # String
 # String is a collection of charaters  
 
-# we can give in string number(123), Symbol(!@%#&!*), letter(abcs)
+# we can give string number(123), Symbol(!@%#&!*), letter(abcs)
 # we can write the the string in either ex. "" or ''
 # Immutable string change nhi hoti  (Unchangeable)
 # left indexing start from 0 
 # right indexing starts from -1
 
-name="   aman   "
+name="    aman    "
 name2="TAUKIR"
 msg="Wellcome to 9 th @string chapter"
 
@@ -15,7 +15,7 @@ msg="Wellcome to 9 th @string chapter"
 # ====================
 
 # len()
-lenofname = len(name)
+# lenofname = len(name)
 # print(lenofname)
 
 # Indexing()
@@ -23,11 +23,10 @@ lenofname = len(name)
 # print(name[-1])
 
 # Slicing [startswith:endswith] endswith excluded
-# print(msg[0:-1])
+# print(name[0:3])
 
 # Upper()
 # print(name.upper())
-
 
 # Lower()
 # print(name2.lower())
@@ -41,39 +40,38 @@ lenofname = len(name)
 # print(msg.replace("Wellcome","Thanks"))
 
 # find() subtring ka index batata hai
-text ="very very memmorable day"
+text ="very veryyyy memmorable day"
 # print(text.find("y"))
 
-# count() kitne baar ek wordletter aaya hai
-# print(text.count("very"))
+# count() kitne baar ek word letter aaya hai
+# print(text.count("m"))
 
 # spilt() string ko list me tod dega
 
-greeting ="very very memmorable day"
+# greeting ="very very memmorable day"
 # print(greeting.split())
 
 # join() list ko string me jod denga
-greeting2 =['very', 'very', 'memmorable', 'day']
+# greeting2 =['very', 'very', 'memmorable', 'day']
 # print(" ".join(greeting2))
 
 
 # isalpha() check karta hai string me sirf alphabet hain ya nahi 
 
-check = "Rahul1221@#@!#@!"
+check = "Rahul"
 # print(check.isalpha())
 
 # isdigit() check karta hai sirf number hai ya nahi
 
-number="1212fdfdsfs312315"
+number="15454"
 # print(number.isdigit())
 
 # isalnum() check karta hai alphabet + number (no special charater) rahna chahiye
-alnum = "123abc@@#!"
+alnum = "123abc"
 # print(alnum.isalnum())
 
 # isspace() space hai ya nhi
 
-space = " Sumer Sheikh Khan "
 space2 =" " # ye sirf empteness check karta hai 
 # print(space2.isspace())
 
@@ -100,25 +98,25 @@ myname3= "TAvKiR"
 
 # center() text ko beach me align karega
 
-# print(myname.center(100,"_"))
+# print(myname.center(100," "))
 
 
 # format() string value me insert karega (Most Imp)
 
-name4 = "Kunali"
+name4 = "Ranju"
 age = 20
 
 # print("Happy birthday {} and your age is {} ".format(name4,age))
 
 # F-string (IMPORTANT)
 # below method use in industry to handle the string format this is modern aur fast way to format the string
-# print(f"Happy birthday {name4} and your age is {age}")
+print(f"Happy birthday {name4} and your age is {age}")
 
 
 # escape charater \n ,\t
 
-# print("Hello\nWorld") # new line me shift honga
-# print("Hello\tWorld") # ek tab ki space create hongi
+print("Hello\nWorld") # new line me shift honga
+print("Hello\tWorld") # ek tab ki space create hongi
 
 # String Comparison
 
@@ -128,7 +126,7 @@ age = 20
 
 a="Hello"
 b="World"
-print(a+" "+b)
+# print(a+" "+b)
 
 # string repetation string ko repeat karta hai
 
@@ -138,8 +136,8 @@ print("Kunali"*3)
 # endswith() check karta hai ki string kisi specific word/letter se khatam/end ho raha ya nahi 
 
 language ="Python Program"
-print(language.startswith("Python"))
-print(language.endswith("Python"))
+# print(language.startswith("Python"))
+# print(language.endswith("Python"))
 
 
 # ===================*****************====================
