@@ -4,10 +4,10 @@
 # passw = input("Pleasen enter your password")
 # passlenght=len(passw)
 
-# if passlenght >=6 and "@" in passw and "#" in passw and "!" in passw  :
-#     print("Wellcome")
+# if passlenght >=6 and "@" in passw or "#" in passw or "!" in passw:
+#     print("USer LOgin")
 # else:
-#     print("please try")
+#     print("please try again")
 
 
 # Calculator

@@ -3,7 +3,7 @@
 
 # A dictionary where we store the data in keys & values pairs
 # words ---> meaning 
-# {"name":"Sumer"}
+{"name":"Sumer"}
 
 # KeyPoint
 # -------------
@@ -11,10 +11,10 @@
 # key must be unique
 # values can be anything
 # Dict is mutable(changable)
-# written {}
+# written in  {}
 
 mydict ={
-        "name":"Saniya",
+        "name":"Manju",
         "age":20,
         "city":"Wardha",
         "college":"FEAT"
@@ -22,7 +22,7 @@ mydict ={
 
 # Print dict
 # -------------
-# print(mydict)
+print(mydict)
 
 # Access Value
 # -------------
@@ -31,18 +31,18 @@ mydict ={
 
 # Change Value
 # -------------
-mydict["age"] = 25
-mydict["college"]="DMI"
+# mydict["name"] = "Ranju"
+# mydict["college"]="Tulsiram"
 # print(mydict)
 
 # Add new key and Value
 # -------------
-mydict["Department"]="B.tech"
+# mydict["Department"]="B.tech"
 # print(mydict)
 
 # Remove Data
 # -------------
-mydict.pop("age")
+# mydict.pop("age")
 # print(mydict)
 
 # Check key exist 
@@ -69,12 +69,12 @@ mydict.pop("age")
 
 # items() get all key -value pair
 # -------------
-# print(mydict.items())
+print(mydict.items())
 # print(mydict)
 
 # pop() remove item
 # -------------
-# print(mydict.pop("name"))
+print(mydict.pop("name"))
 # print(mydict)
 
 # popitem() remove last item
@@ -89,8 +89,8 @@ mydict.pop("age")
 
 # copy()
 # -------------
-# dicttwo=mydict.copy()
-# print(dicttwo)
+dicttwo=mydict.copy()
+print(dicttwo)
 
 # update()
 # -------------
@@ -98,11 +98,11 @@ mydict.pop("age")
 # mydict.update({"city":"chandrapur",'college': 'Agnihotri'})
 # print(mydict)
 
-# setdefault() agar hai to rakh nahi hai to add krde
+# setdefault() agar hai to rakho nahi hai to add krdo
 # -------------
-student={"age":20}
-student.setdefault("name","rahul")
-print(student)
+# student={}
+# student.setdefault("name","rahul")
+# print(student)
 
 
 

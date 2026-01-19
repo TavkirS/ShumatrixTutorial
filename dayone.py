@@ -5,18 +5,18 @@
 
 # Print Statement
 # print("Helloo Shruti")
-
 # ===============================
 
 #  Variables
 # -----------
+# Variables are use to store data
 # Python has no command for declaring a variable.
 # A variable is created the moment you first assign a value to it.
 # Pythons predefined keywords should not be variable name (35 predefined "hard" keywords)
 # ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 
 # 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
-name = "Sarthak" 
+num= "Sarthak" 
 
 # ===============================
 
@@ -32,13 +32,13 @@ name = "Sarthak"
 
 # Many Values to Multiple Variables
 # ---------------------------------
-# name1, name2, name3 = "Kunali", "Sarthak" , "Taukir"
+name1, name2, name3 = "Kunali", "Sarthak" , "Taukir"
 
 # name1 = "Kunali"
 # name2 = "Sarthak"
 # name3 = "Taukir"
-# print(name3)
-# name1, name2, name3 = "Sarthak", "Rajesh" , "Taukir"
+# print(name1)
+name1, name2, name3 = "Sarthak", "Rajesh" , "Taukir"
 # name1 = name2 = name3 = "Sarthak"
 # print(name1)
 
@@ -46,7 +46,7 @@ name = "Sarthak"
 
 # One Value to Multiple Variables
 # ---------------------------------
-# x = y = z = "Orange"
+x = y = z = "Orange"
 # print(y)
 
 # ===============================
@@ -59,6 +59,9 @@ name = "Sarthak"
 # age = "is"
 # roll = "Engg"
 
+# name="Tauk"
+# dob="2001"
+# print(name,dob)
 # print(name,age,roll)
 # print(name+age+roll)
 
@@ -77,8 +80,9 @@ def myfun():
     print(x)
 
 myfun()
-# print(x)
+print(x)
 # print(x) 
+
 
 # We canot give a name to variable which alredy built in python 
 

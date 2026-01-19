@@ -25,7 +25,7 @@
 # print(div)
 # floordiv = 10 // 4
 # print(floordiv)
-# modulus = 10 % 4
+# modulus = 10 % 4 # reminder deta hai
 # print(modulus)
 # exponent =2 ** 3
 # print(exponent)
@@ -35,14 +35,15 @@
 
 # = , += , -= , *= , /= , //= , %=  , **=
 
-# val = 5
-# val = 5+5 
-# print(val)
+val = 5
+# total = val+10
+val *= 10
+print(val)
 
 # multi = 6
-# multi * 2 
+# total = multi * 2 
 # multi *= 2
-# print(multi)
+# # print(multi)
 
 # x= 2
 # x **= 3
@@ -58,23 +59,26 @@
  
 # and , or , not 
 
+ispersonsmoke = False
+print(not ispersonsmoke)
+
 # 5) Identity Operator
 
 # is , not 
 
-# a= 6
-# b=a
+a= 6
+b=10
 
-# print(a is b)
+print(a is b)
 
 
 # 6) Membership Operator
 # --------------------------
-# in not in 
+# in ,not in 
 
-# am= [1,2,3]
-# print(1 in am)
-# print(3 not in am)
+am= [1,2,3]
+print(1 in am)
+print(4 not in am)
 
 
 

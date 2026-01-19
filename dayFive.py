@@ -19,6 +19,8 @@
 # else:
 #     print('You are minor')
 
+
+
 # elif
 
 # mark = int(input("Enter your mark"))
@@ -33,21 +35,21 @@
 
 # year = int(input("Enter year"))
 
-# if year == 2025:
+# if year == 2026:
 #     print("This is current year")
-# elif year < 2025:
+# elif year < 2026:
 #     print("This is previous year")
 # else:
 #     print("This is future year")
 
 # check if the day is weekend or not 
 
-# day = input("Enter day").lower()
+day = input("Enter day").upper()
 
-# if day =="saturday" or day == "sunday":
-#     print("this is weekend day")
-# else:
-#     print("this is week day")
+if day =="saturday" or day == "sunday":
+    print("this is weekend day")
+else:
+    print("this is week day")
 
 
 age = int(input("Enter your age"))
@@ -56,7 +58,6 @@ if age >= 18 and age <= 22:
     print("Eligible for driving licence")
 else:
     print("Not eligible")
-
 
 
 

@@ -1,6 +1,14 @@
+
+
+def kunaliMaths(a,b):
+    total = a*b
+    return total
+
+
 # Data Types
 # -------------
 # Variables can store data of different types, and different types can do different things.
+
 
 # Built-in Data Types
 # -----------------
@@ -16,15 +24,28 @@
 # There are three numeric types in Python:
 # int  15
 # float  25.5
-# complex  6 + 5j
+# complex  6 + 5j (Complex number wo number jisme 2 parts hote hai)
 
+# 6 --> real part
+# 5 --> Imaginary part
+# j --> imaginary unit
 # complex number = real part + imaginary part
+# num = 6 +5j
+# print(num)
+# print(num.imag)
+# print(num.real)
 
-# Python Casting
+# Python Casting 
 # -----------------
-# x = int(1)   
-# y = int(2.8) 
-# z = int("3") 
+# num=1 
+# num1 = 1.5
+# num2= "2"
+# print(type(num))
+# x = float(num)
+# y=int(num1)
+# z = int(num2)
+# print(z)
+
 
 # ============
 
@@ -61,7 +82,7 @@ student=("Sarthak","Kunali","Sumer") # Round Braces tuple unmutable
 # print(type(student))
 # print(student[1])
 
-# in py there is built it function to check the data type
+# in py there is built in function to check the data type
 
 # range(start,stop,step)
 
@@ -72,9 +93,9 @@ student=("Sarthak","Kunali","Sumer") # Round Braces tuple unmutable
 
 # in dict we have the pairs of keys values
 
-# classstu = {"name":"sumer","age":18,"city":"Deoli"}
-# print(classstu)
-# print(type(classstu))
+classstu = {"name":"sumer","age":18,"city":"Deoli"}
+print(classstu)
+print(type(classstu))
 
 
 # set is unordered collection of unique data 
