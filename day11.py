@@ -2,6 +2,7 @@
 # for loop ka use ek kaam ko baar baar repeat karne ke liye hota hai 
 # Coding Principle --> DRY = Do Not Repeat Youself
 
+
 # Syntax 
 # for variable in sequence:
 #     statement
@@ -23,7 +24,7 @@
 # range() number ki sequence ko banata hai
 # print(range(500,1000))
 
-num = 50
+# num = 50
 
 # Loop on message
 # for i in range(51):
@@ -37,14 +38,14 @@ num = 50
 # for loop on String
 # str = "Python"
 # for i in str:
-#     print(str)
+#     print(i)
 
 
 # for loop with condition (if)
 
-for i in range(1,11):
-    if i % 2 == 0:
-        print(i)
+# for i in range(1,11):
+#     if i % 2 == 0:
+#         print(i)
 
 
 # loop on dict
@@ -56,23 +57,23 @@ student = {"Name":"Aman",
 
 # print(student["Name"])
 
-for sumer in student:
-    print(sumer,":",student[sumer])
+# for i in student:
+#     print(i,":",student[i])
 
 
 # keys() 
 
-# for i in student.keys():
-#     print(i)
+for i in student.keys():
+    print(i)
 
 # values()
-# for i in student.values():
-#     print(i)
+for i in student.values():
+    print(i)
 
 # items()
 
-# for i , j in student.items():
-#     print(i,"-",j)
+for i , j in student.items():
+    print(i,"--",j)
 
 # Exercise
 

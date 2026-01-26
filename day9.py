@@ -41,7 +41,8 @@ msg="Wellcome to 9 th @string chapter"
 
 # find() subtring ka index batata hai
 text ="very veryyyy memmorable day"
-# print(text.find("y"))
+print("*******")
+print(text.find("y"))
 
 # count() kitne baar ek word letter aaya hai
 # print(text.count("m"))
@@ -106,7 +107,7 @@ myname3= "TAvKiR"
 name4 = "Ranju"
 age = 20
 
-# print("Happy birthday {} and your age is {} ".format(name4,age))
+print("Happy birthday {} and your age is {} ".format(name4,age))
 
 # F-string (IMPORTANT)
 # below method use in industry to handle the string format this is modern aur fast way to format the string
@@ -120,13 +121,13 @@ print("Hello\tWorld") # ek tab ki space create hongi
 
 # String Comparison
 
-# print("apple"=="apple")
+print("apple"=="appl")
 
 # string Concatenation string ko jodna
 
 a="Hello"
 b="World"
-# print(a+" "+b)
+print(a+" "+b)
 
 # string repetation string ko repeat karta hai
 
@@ -136,8 +137,8 @@ print("Kunali"*3)
 # endswith() check karta hai ki string kisi specific word/letter se khatam/end ho raha ya nahi 
 
 language ="Python Program"
-# print(language.startswith("Python"))
-# print(language.endswith("Python"))
+print(language.startswith("P"))
+print(language.endswith("Program"))
 
 
 # ===================*****************====================

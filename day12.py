@@ -28,11 +28,11 @@
 
 # table of 2 
 
-# i=1
+i=1
 
-# while i <= 20:
-#     print("2 *",i,"=",2*i)
-#     i = i+1
+while i <= 20:
+    print(i+i)
+    i = i+1
 
 
 # Print number from 1 to 5
@@ -72,10 +72,10 @@
 
 # Countdown
 
-i= 10
-while i >=-1:
-    print(i)
-    i = i-1
+# i= 10
+# while i >=-1:
+#     print(i)
+#     i = i-1
 
 
 

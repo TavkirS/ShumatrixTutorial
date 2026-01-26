@@ -1,10 +1,3 @@
-
-
-def kunaliMaths(a,b):
-    total = a*b
-    return total
-
-
 # Data Types
 # -------------
 # Variables can store data of different types, and different types can do different things.
@@ -30,33 +23,34 @@ def kunaliMaths(a,b):
 # 5 --> Imaginary part
 # j --> imaginary unit
 # complex number = real part + imaginary part
-# num = 6 +5j
+num = 6 +5j
 # print(num)
 # print(num.imag)
 # print(num.real)
 
 # Python Casting 
 # -----------------
-# num=1 
-# num1 = 1.5
-# num2= "2"
-# print(type(num))
+num=1 
+num1 = 1.5
+num2= "2"
+# print(type(num2))
 # x = float(num)
 # y=int(num1)
 # z = int(num2)
+# print(type(z))
 # print(z)
 
 
 # ============
 
-# Name = "Name"
-# age = 18
-# weight = 50.22
-# adress = "at post deoli"
-# contact = 8888234984
-# isstudentsmoke = False
-# percentage = 98.88
-# studentmigrationadress =  None 
+Name = "Name"
+age = 18
+weight = 50.22
+adress = "at post deoli"
+contact = 8888234984
+isstudentsmoke = False
+percentage = 98.88
+studentmigrationadress =  None 
  
 
 # print(type(Name))
@@ -82,13 +76,11 @@ student=("Sarthak","Kunali","Sumer") # Round Braces tuple unmutable
 # print(type(student))
 # print(student[1])
 
-# in py there is built in function to check the data type
 
 # range(start,stop,step)
 
-
-# for i in range(5):
-#     print("Happy birthdy Mmy")
+# for i in range(10):
+#     print("Happy birthdy Tejaswini")
 
 
 # in dict we have the pairs of keys values
@@ -100,22 +92,22 @@ print(type(classstu))
 
 # set is unordered collection of unique data 
 
-# student={"S","K","T"}
-# print(student)
-# print(type(student))
+student={"S","K","T"}
+print(student)
+print(type(student))
 
 
 x = int(2.1) 
-# print(x) 
-# print(type(x))
+print(x) 
+print(type(x))
 
 weight =float(60)
-# print(weight)
-# print(type(weight))
+print(weight)
+print(type(weight))
 
 age=str(18)
-# print(age)
-# print(type(age))
+print(age)
+print(type(age))
 
 
 

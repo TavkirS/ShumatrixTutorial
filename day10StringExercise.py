@@ -23,26 +23,16 @@
 # print("Spaces",message.count(" "))
 # print("Fullstop",message.count("."))
 # print("Hash",message.count("#"))
-
 # String Operation
 
-# message = input("Enter your message\n")
+message = input("Enter your message\n")
 
-# print("Character",len(message))
-# print(message.strip())
-# print(message.upper())
-# print(message.lower())
+print("Character",len(message))
+print(message.strip())
+print(message.upper())
+print(message.lower())
 
 
-
-# Day one to Day 10 go through 
-# Brushup operator and its types 
-# List methods brushup
-# Dict practice with solution
-# String ko padhna hai all methods
-# String ki exercise karna hai 
-# String exercise code ko scale karna hai
-# till monday EOD
 
 
 

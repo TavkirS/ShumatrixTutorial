@@ -4,7 +4,7 @@
 # ===============================
 
 # Print Statement
-# print("Helloo Shruti")
+print("Helloo Tejaswini")
 # ===============================
 
 #  Variables
@@ -16,7 +16,7 @@
 # ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 
 # 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
-num= "Sarthak" 
+num = "Sarthak"
 
 # ===============================
 
@@ -32,36 +32,36 @@ num= "Sarthak"
 
 # Many Values to Multiple Variables
 # ---------------------------------
-name1, name2, name3 = "Kunali", "Sarthak" , "Taukir"
+# name1, name2, name3 = "Kunali", "Sarthak" , "Taukir"
 
 # name1 = "Kunali"
 # name2 = "Sarthak"
 # name3 = "Taukir"
 # print(name1)
-name1, name2, name3 = "Sarthak", "Rajesh" , "Taukir"
+# name1, name2, name3 = "Sarthak", "Rajesh" , "Taukir"
 # name1 = name2 = name3 = "Sarthak"
-# print(name1)
+# print(name2)
 
 # ===============================
 
 # One Value to Multiple Variables
 # ---------------------------------
 x = y = z = "Orange"
-# print(y)
+print(y,x,z)
 
 # ===============================
-
+# print()
 # In the print() function, you output multiple variables, separated by a comma:
 # You can also use the + operator to output multiple variables:
 # (+ , ",")
 
-# name = "Sarthak"
-# age = "is"
-# roll = "Engg"
+name = "Sarthak"
+age = "is"
+roll = "Engg"
 
-# name="Tauk"
-# dob="2001"
-# print(name,dob)
+name="Priy"
+dob="1998"
+print(name+dob)
 # print(name,age,roll)
 # print(name+age+roll)
 
@@ -75,16 +75,13 @@ x = y = z = "Orange"
 x= "Sarthak is awsome"
 
 def myfun():
-    global x
-    x="Kunali is awsome"
-    print(x)
+    global xy
+    xy="Tejawini is brillent"
+    print(xy)
 
 myfun()
-print(x)
+print(xy)
 # print(x) 
-
-
-# We canot give a name to variable which alredy built in python 
 
 # ===============================
 
