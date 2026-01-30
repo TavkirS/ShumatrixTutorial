@@ -4,9 +4,10 @@
 
 # while condition:
 #     logic 
+#     increment/decrement
 
 
-# i = 7
+# i = 1
 # while i <= 11:
 #     print(i)
 #     # i = i+1
@@ -18,27 +19,26 @@
 
 # i = 1 (starting point)
 # i <= 11 ---> True
-# print(i,"Hello world") logic
+# print(i,"Hello world") Business logic
 # i (increasing value of i)
-# jab tak i=11 ---> false ---> loop stop 
+# jab i=12 ---> false ---> loop stop 
 # i= i+1 increment
-# i= i+1 decrement
+# i= i-1 decrement
 
 
 
 # table of 2 
 
-i=1
-
-while i <= 20:
-    print(i+i)
-    i = i+1
+# i=1
+# while i <= 10:
+#     print(i+i)
+#     i = i+1
 
 
 # Print number from 1 to 5
 
-# i = 1 
-# while i <=5:
+# i = 4
+# while i <=10:
 #     print(i)
 #     i = i+1
 
@@ -46,7 +46,7 @@ while i <= 20:
 # Print even number from 2 to 10
 
 # i =2
-# while i<=10:
+# while i <= 20:
 #     print(i)
 #     i = i+2
 
@@ -60,9 +60,11 @@ while i <= 20:
 
 # while operation on string
 
-# name = "Shyam"
+# name = "Tejaswini"
 # lenofname = len(name)
 # print(lenofname)
+# print(name[0])
+
 
 # i=0
 # while i < lenofname:
@@ -72,10 +74,10 @@ while i <= 20:
 
 # Countdown
 
-# i= 10
-# while i >=-1:
-#     print(i)
-#     i = i-1
+i= 10
+while i > -1:
+    print(i)
+    i = i-1
 
 
 

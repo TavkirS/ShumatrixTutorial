@@ -22,7 +22,7 @@ mydict ={
 
 # Print dict
 # -------------
-print(mydict)
+# print(mydict)
 
 # Access Value
 # -------------
@@ -31,13 +31,13 @@ print(mydict)
 
 # Change Value
 # -------------
-# mydict["name"] = "Ranju"
-# mydict["college"]="Tulsiram"
+# mydict["name"] = "Tejaswini"
+# mydict["college"]="FEAT"
 # print(mydict)
 
 # Add new key and Value
 # -------------
-# mydict["Department"]="B.tech"
+# mydict["Department"]="AIDS"
 # print(mydict)
 
 # Remove Data
@@ -69,7 +69,7 @@ print(mydict)
 
 # items() get all key -value pair
 # -------------
-print(mydict.items())
+# print(mydict.items())
 # print(mydict)
 
 # pop() remove item
@@ -79,7 +79,7 @@ print(mydict.pop("name"))
 
 # popitem() remove last item
 # -------------
-# mydict.popitem()
+mydict.popitem()
 # print(mydict)
 
 # clear()
@@ -89,8 +89,8 @@ print(mydict.pop("name"))
 
 # copy()
 # -------------
-dicttwo=mydict.copy()
-print(dicttwo)
+# dicttwo=mydict.copy()
+# print(dicttwo)
 
 # update()
 # -------------

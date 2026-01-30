@@ -2,7 +2,7 @@
 # for loop ka use ek kaam ko baar baar repeat karne ke liye hota hai 
 # Coding Principle --> DRY = Do Not Repeat Youself
 
-
+# range()
 # Syntax 
 # for variable in sequence:
 #     statement
@@ -38,14 +38,14 @@
 # for loop on String
 # str = "Python"
 # for i in str:
-#     print(i)
+#     print(str)
 
 
 # for loop with condition (if)
 
-# for i in range(1,11):
-#     if i % 2 == 0:
-#         print(i)
+for i in range(1,11):
+    if i % 2 == 0:
+        print(i)
 
 
 # loop on dict

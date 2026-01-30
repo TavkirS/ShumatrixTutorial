@@ -51,8 +51,8 @@ class Student():
 # Creating object from the class
 
 s1 = Student()
-print(s1.age,s1.name)
-print(s1.name)
+# print(s1.age,s1.name)
+# print(s1.name)
 
 # Explanationss:
 # s1--> object
@@ -127,6 +127,73 @@ class Car():
 # Inheritance
 # Inheritance allows a class (child) to reuse properties and methods of anathor class(parent)
 # Inheritance means parent class ki cheezien child class me use karna
+
+# class Vehicle():
+#     color="Red"
+#     fourwheel=4
+#     twowheel=2
+
+#     def Start(self):
+#         print("Gaddi Start")
+    
+#     def Stop(self):
+#         print("Gaddi Stop")
+
+# class Car(Vehicle):
+
+#     def Acstart(self):
+#         print("Car AC start")
+
+# class Bike(Car):
+
+#     def Onstand(self):
+#         print("Bike on Stand")
+
+
+# bmw = Car()
+# bmw.Start()
+# bmw.Acstart()
+# bmw
+# 
+# 
+# 
+# 
+# .Onstand()
+
+
+# Polymorphism
+# Polymorphism means the ability of a method or function to take multiple forms same name but different behavior
+# Polymorphism like ek hi naam but different alag alag kaam
+
+# Method Overiding(Most Common)
+
+class Animal():
+    def sound(self):
+        print("Animal makes sound")
+
+
+class dog():
+    def sound(self):
+        print("Dog Barking")
+    
+a = Animal()
+d = dog()
+
+a.sound()
+d.sound()
+
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
 

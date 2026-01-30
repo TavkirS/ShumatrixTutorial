@@ -21,6 +21,7 @@
 # print("Hellow World") --> Business Logic
 # function kab chalega? jab function ko call karege tab vo chalega
 
+
 # Function without parameter/input
 # def hellow():
 #     print("Hellow World")
@@ -34,22 +35,32 @@
 # Function with parameter/input
 # def hellow(name):
 #     print("Happy birthday to you",name)
+# hellow("Tejaswini")
 
 # name--> parameter 
 # "sarthak"--> argument (value)
 
+
+
+
+name = "sumer"
+
+# print(name.upper()) function without param in python
+# print(len(name)) function with param in python
+
 # hellow("Shruti")
 # hellow("Sarthak")
 # hellow("Manju")
-# hellow_World("Sarthak")
-# hellow("Shruti")
+# hellow("Kunali")
+# hellow("Ranju")
 
 # lets make calcu
 
 # def add(a,b):
-#     print(a * b)
+#     print(a + b)
 
-# add(51,5)
+# add(15545,54545)
+
 
 
 # Function with return value
@@ -57,6 +68,9 @@
 # def square(a):
 #     total = a*a
 #     return total
+
+# value=square(95)
+# print(value)
 
 # output = square(5)
 # print(output)
@@ -72,7 +86,9 @@
 #     else:
 #         return "Odd"
     
-# result = check_even(21)
+# print(check_even(21))
+
+# result = check_even(81)
 # print(result)
 
 # Function calling anathor function
@@ -85,18 +101,24 @@
 
 # show()
 
+# name = "Shruti"
+
+# print(len(name))
+
 
 # =========Exercise==================
 
-def snapchatWellcome():
-    print("Holaa welcome to the snapchat","Manju")
+# def snapchatWellcome():
+#     print("Hello welcome to the snapchat","Manju")
 
-# snapchatWellcome()
+# # snapchatWellcome()
 
-# def snapchatWellcome(name):
-#     print("Holaa welcome to the snapchat",name)
+def snapchatWellcome(name,age):
+    print(f"Hello {name} welcome to the snapchat your age is {age}")
 
-# snapchatWellcome("Shruti")
+
+# snapchatWellcome("kunali",20)
+# snapchatWellcome("Shruti",65)
 
 # ========================
 
@@ -106,29 +128,36 @@ def snapchatWellcome():
 #     else:
 #         return "Odd"
     
-# print(checkOddEven(89))
+# print(checkOddEven(2))
 
 # ========================
 
-# def countString(message):
-#     totallen = len(message)
-#     print(totallen)
 
-# countString("")
+def countString(message):
+    totallen = message.count("i")
+    return totallen
+
+print(countString("Tejaswini"))
+
+
+
 # ===========================
 
 
-def calculator(num1,num2,sign):
-    if sign == "+":
-        print(num1+num2)
-    elif sign == "-":
-        print(num1-num2)
-    elif sign == "*" or sign == "x":
-        print(num1*num2)
-    elif sign == "/":
-        print(num1/num2)    
+# def calculator(num1,sign,num2):
+#     if sign == "+":
+#         print(num1+num2)
+#     elif sign == "-":
+#         print(num1-num2)
+#     elif sign == "*" or sign == "x":
+#         print(num1*num2)
+#     elif sign == "/":
+#         print(num1/num2)    
  
-calculator(5,8,"*")
+# calculator(8,"+",9)
+
+
+
 
 
 
