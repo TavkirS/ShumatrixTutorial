@@ -1,5 +1,5 @@
 # Object Oriented Programming (OOPS) is a programming approach are
-#  buit using object that represent real world entites, 
+# buit using object that represent real world entites, 
 # and these objects contain data(attributes) and behaviour(methods)
 
 # every object has:
@@ -50,13 +50,13 @@ class Student():
 
 # Creating object from the class
 
-s1 = Student()
-# print(s1.age,s1.name)
+# s1= Student()
+# print(s1.name,s1.age)
 # print(s1.name)
 
 # Explanationss:
 # s1--> object
-# Student() --> is class ka object banaya
+# Student() --> is class ka object banao
 # . --> Object ke data ko access karna / adreess or referance Point
 
 # note: class name should be start with CAPITAL 
@@ -81,29 +81,34 @@ class Car():
 # print(bmw.withac)
 
 # audi = Car()
-# print(bmw.color1,bmw.withoutac)
+# print(audi.color1,audi.withoutac)
 
 # Class Methods
 # A method is a function that is defined inside a class and is
 # used to perform an action on object.
 # Self current object ko refer karta hai 
 
-# class Car():
-#     color ="Red" # this is variable/attribute
-#     wheels = 4  # this is variable/attribute
+class Car():
+    color ="Red" # this is variable/attribute
+    wheels = 4  # this is variable/attribute
 
-#     def carDrive(self,name):
-#         self.age=name
-#         print("Car Start",self.age)
+    def carDrive(self,name):
+        self.name1=name
+        print("Car Start",self.name1)
 
-#     def acOn(self):
-#         print("AC on")
+    def acOn(self):
+        print("AC on")
 
-#     def soundON(self):
-#         print("Music ON")
+    def soundON(self):
+        print("Music ON")
 
-# bmw = Car()
-# bmw.carDrive("Kunali")
+bmw = Car()
+bmw.carDrive("Kunali")
+bmw.acOn()
+
+
+# Constructer
+# ------------
 
 # __int__() this is a special method that is 
 # automatically called when object is created
