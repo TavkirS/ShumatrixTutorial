@@ -3,7 +3,7 @@
 # and these objects contain data(attributes) and behaviour(methods)
 
 # every object has:
-# Data (properties/variable)
+# Data (attributes/properties/variable)
 # work (Functions/methods)
 
 # 4 Pillers of OOPS:
@@ -29,6 +29,7 @@
 # Room
 # Color
 # Washroom
+# Living room
 
 # Houses(objects)
 # Kunali ka ghar
@@ -51,8 +52,8 @@ class Student():
 # Creating object from the class
 
 # s1= Student()
-# print(s1.name,s1.age)
 # print(s1.name)
+# print(s1.age)
 
 # Explanationss:
 # s1--> object
@@ -70,8 +71,8 @@ class Student():
 class Car():
     color1="Green"
     color2="Red"
-    withac="Yes"
-    withoutac="No"
+    withac=True
+    withoutac=False
 
 # Har object apna alag identity rakhta hai
 # object bolete class ka real use 
@@ -81,40 +82,40 @@ class Car():
 # print(bmw.withac)
 
 # audi = Car()
-# print(audi.color1,audi.withoutac)
+# print(audi.color2,audi.withac)
 
 # Class Methods
 # A method is a function that is defined inside a class and is
 # used to perform an action on object.
 # Self current object ko refer karta hai 
 
-class Car():
-    color ="Red" # this is variable/attribute
-    wheels = 4  # this is variable/attribute
+# class Car():
+#     color ="Red" # this is variable/attribute
+#     wheels = 4  # this is variable/attribute
 
-    def carDrive(self,name):
-        self.name1=name
-        print("Car Start",self.name1)
+#     def carDrive(self,name):
+#         self.name1=name
+#         print("Car Start",self.name1)
 
-    def acOn(self):
-        print("AC on")
+#     def acOn(self):
+#         print("AC on")
 
-    def soundON(self):
-        print("Music ON")
+#     def soundON(self):
+#         print("Music ON")
 
-bmw = Car()
-bmw.carDrive("Kunali")
-bmw.acOn()
+# bmw = Car()
+# bmw.carDrive("Kunali")
+# bmw.acOn()
 
 
 # Constructer
 # ------------
 
-# __int__() this is a special method that is 
+# __init__() this is a special method that is 
 # automatically called when object is created
 
 
-# class Student():
+# class Game():
 #     def __init__(self):
 #         print("Sarthak")
 #         print("Shruti")
@@ -123,41 +124,48 @@ bmw.acOn()
 #         print("taukir")
 #         print("Tejaswini")
     
-#     def studentMarks(self):
-#         print("Mai ek method hu aur student ke marks batunga")
+#     def actionUp(self):
+#         print("this method jump the object")
 
-# feat =Student()
+#     def actionDown(self):
+#         print("this method down the object")
+
+# freefire = Game()
+# freefire.actionUp()
+# freefire.actionDown()
 
 
 # Inheritance
-# Inheritance allows a class (child) to reuse properties and methods of anathor class(parent)
+# Inheritance allows a class (child) to reuse properties and methods of anathor class i.e (parent)
 # Inheritance means parent class ki cheezien child class me use karna
 
-# class Vehicle():
-#     color="Red"
-#     fourwheel=4
-#     twowheel=2
+class Vehicle():
+    color1="Red"
+    color2="Black"
+    fourwheel=4
+    twowheel=2
 
-#     def Start(self):
-#         print("Gaddi Start")
+    def Start(self):
+        print("Gaddi Start")
     
-#     def Stop(self):
-#         print("Gaddi Stop")
+    def Stop(self):
+        print("Gaddi Stop")
 
-# class Car(Vehicle):
+class Car(Vehicle):
 
-#     def Acstart(self):
-#         print("Car AC start")
+    def Acstart(self):
+        print("Car AC start")
 
-# class Bike(Car):
+class Bike(Car):
 
-#     def Onstand(self):
-#         print("Bike on Stand")
+    def Onstand(self):
+        print("Bike on Stand")
 
 
-# bmw = Car()
-# bmw.Start()
-# bmw.Acstart()
+bmw = Bike()
+bmw.Start()
+bmw.Acstart()
+bmw.Onstand()
 # bmw
 # 
 # 
@@ -172,20 +180,96 @@ bmw.acOn()
 
 # Method Overiding(Most Common)
 
-class Animal():
-    def sound(self):
-        print("Animal makes sound")
+# class Animal():
+#     def sound(self):
+#         print("Animal makes sound")
 
 
-class dog():
-    def sound(self):
-        print("Dog Barking")
+# class dog():
+#     def sound(self):
+#         print("Dog Barking")
     
-a = Animal()
-d = dog()
+# a = Animal()
+# d = dog()
 
-a.sound()
-d.sound()
+# a.sound()
+# d.sound()
+
+
+
+class Shape():
+
+    color ="red"
+    color1 = "Green"
+
+    def __init__(self):
+        print("I am a shape predictor")
+
+    def circle(self):
+        print("I am a circle")
+
+    def rectangle(self):
+        print("I am a rectangle")
+    
+obj = Shape()
+obj.circle()
+obj.rectangle()
+
+class Shape1(Shape):
+
+    def hexagon(self):
+        print("This is hexagon")
+
+obj = Shape1()
+obj.circle()
+obj.hexagon()
+
+
+
+class Animal():
+
+    animalColor = "White"
+    AnimalColor2 ="Black"
+
+    def walk(self):
+        print("animal walking")
+
+    def animalSound(self):
+        print("Animal sounding")
+
+
+tiger = Animal()
+print(tiger.animalColor)
+tiger.walk()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

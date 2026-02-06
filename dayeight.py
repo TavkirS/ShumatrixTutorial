@@ -19,7 +19,10 @@ mydict ={
         "city":"Wardha",
         "college":"FEAT"
         }
-
+products = {
+        "Lipstick": {"price": 499, "quantity": 10}
+}
+print(products["Lipstick"])
 # Print dict
 # -------------
 # print(mydict)
@@ -37,8 +40,8 @@ mydict ={
 
 # Add new key and Value
 # -------------
-# mydict["Department"]="AIDS"
-# print(mydict)
+mydict["Department"]="AIDS"
+print(mydict)
 
 # Remove Data
 # -------------
