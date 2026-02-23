@@ -14,15 +14,23 @@
 # written in  {}
 
 mydict ={
-        "name":"Manju",
+        "name":"{}",
         "age":20,
         "city":"Wardha",
         "college":"FEAT"
         }
-products = {
-        "Lipstick": {"price": 499, "quantity": 10}
-}
-print(products["Lipstick"])
+# print(mydict["name"])
+
+# products = {
+#         "Lipstick": {"price": {"brownshade":1000,"nudeshade":15000}, "quantity": 10}
+# }
+
+# print(products["Lipstick"]["price"]["nudeshade"])
+
+del mydict
+print(mydict)
+
+
 # Print dict
 # -------------
 # print(mydict)

@@ -152,12 +152,10 @@ class Vehicle():
         print("Gaddi Stop")
 
 class Car(Vehicle):
-
     def Acstart(self):
         print("Car AC start")
 
 class Bike(Car):
-
     def Onstand(self):
         print("Bike on Stand")
 
@@ -166,12 +164,6 @@ bmw = Bike()
 bmw.Start()
 bmw.Acstart()
 bmw.Onstand()
-# bmw
-# 
-# 
-# 
-# 
-# .Onstand()
 
 
 # Polymorphism
@@ -180,67 +172,150 @@ bmw.Onstand()
 
 # Method Overiding(Most Common)
 
-# class Animal():
-#     def sound(self):
-#         print("Animal makes sound")
-
-
-# class dog():
-#     def sound(self):
-#         print("Dog Barking")
-    
-# a = Animal()
-# d = dog()
-
-# a.sound()
-# d.sound()
-
-
-
-class Shape():
-
-    color ="red"
-    color1 = "Green"
-
-    def __init__(self):
-        print("I am a shape predictor")
-
-    def circle(self):
-        print("I am a circle")
-
-    def rectangle(self):
-        print("I am a rectangle")
-    
-obj = Shape()
-obj.circle()
-obj.rectangle()
-
-class Shape1(Shape):
-
-    def hexagon(self):
-        print("This is hexagon")
-
-obj = Shape1()
-obj.circle()
-obj.hexagon()
-
-
-
 class Animal():
-
-    animalColor = "White"
-    AnimalColor2 ="Black"
-
-    def walk(self):
-        print("animal walking")
-
-    def animalSound(self):
-        print("Animal sounding")
+    def sound(self):
+        print("Animal makes sound")
 
 
-tiger = Animal()
-print(tiger.animalColor)
-tiger.walk()
+class dog():
+    def sound(self):
+        print("Dog Barking")
+    
+a = Animal()
+d = dog()
+
+a.sound()
+d.sound()
+
+# Clean Code
+# Flexible design
+# Easy Extention 
+# Industry Standard 
+
+# Same Method + Different Behaviour = Polumorhism
+
+
+
+#Abstraction
+# Abstraction is the process of hiding implementation details and showing only the essential features to the user.
+
+# Aisi class jisme :
+# 1) Kuch incomplete methods hote hai 
+# 2) Child class ko complete karna hota hai
+
+# In python to implement abstact class need use:
+from abc import ABC, abstractmethod
+
+# A method without body 
+@abstractmethod
+def area(self):
+    pass
+
+
+# ==========================
+
+# Abstract Class
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    def sound(self):
+        pass
+
+    @abstractmethod
+    def color(self):
+        pass
+
+# Child Class
+
+class Dog(Animal):
+
+    def color(self):
+        print("My color")
+
+# create Object
+
+d= Dog()
+d.sound()
+d.color()
+
+# Abstract class ka ham direct object bana nhi sakte 
+
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+
+    @abstractmethod
+    def pay(self,amount):
+        pass
+
+class GooglePay(Payment):
+
+    def pay(self, amount):
+        print("Paid amount",amount, "To shruti")
+
+class NetBanking(Payment):
+    def pay(self, amount):
+        print("Paid amount",amount, "To MAnju")
+
+paid=GooglePay()
+paid1=NetBanking()
+paid1.pay(5000)
+paid.pay(5000)
+
+
+
+# Encapsulation
+# Encapsulation is the process of wrapping data(variable) and methods into a single unit (class) and
+# restricting dirct access data for security
+
+# Class without Encapsulation
+# class Bank():
+#     balance = 1000
+
+# icc=Bank()
+# print(icc.balance)
+# icc.balance=1500
+# print(icc.balance)
+
+# To make it private variable we use __ , _
+
+# Variable name     Type               Meaning
+# name             => Public          Anyone can access 
+# _name            => Protected       Conventional only
+# __name           => Private         Strong Protection  
+
+
+# class Bank():
+
+#     def __init__(self):
+#         self.__balance=5000
+    
+#     # with the help of getter and setter
+
+#     def get_bal(self):
+#         return self.__balance
+    
+#     def deposit(self,amount):
+#         if amount > 0:
+#             self.__balance += amount
+
+
+# icc=Bank()
+# print(icc.get_bal())
+# icc.deposit(5000)
+# print(icc.get_bal())
+
+
+
+
+
+    
+
+
+
+
+
 
 
 

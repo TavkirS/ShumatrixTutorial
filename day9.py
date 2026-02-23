@@ -102,10 +102,10 @@ myname3= "TAvKiR"
 
 # format() string value me insert karega (Most Imp)
 
-name4 = "Sarthak"
+name4 = "Shruti"
 age = 21
 gao="Deoli"
-print("Happy Birthday Taukir and your age is 24")
+print("Happy Birthday Kunali and your age is 24")
 # print("Happy birthday {} and your age is {} ".format(name4,age))
 
 # F-string (IMPORTANT)
@@ -141,6 +141,11 @@ print(language.endswith("Program"))
 
 
 # ===================*****************====================
+
+
+
+name="KUNALI"
+print(name.title())
 
 
 

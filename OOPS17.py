@@ -3,13 +3,16 @@ class BeautyStore:
     store_name = "Glow Beauty Store"
 
     def __init__(self):
+        
         self.products = {
             "Lipstick": {"price": 499, "quantity": 10},
             "Face Wash": {"price": 299, "quantity": 15},
             "Perfume": {"price": 999, "quantity": 5},
             "Foundation": {"price": 799, "quantity": 8}
         }
+
         self.cart = {}
+
 
     def show_products(self):
         print("\nAvailable Products:")
@@ -22,7 +25,7 @@ class BeautyStore:
         qty = int(input("Enter quantity: "))
 
         if name in self.products:
-            if self.products[name]["quantity"] >= qty:
+            if qty <= self.products[name]["quantity"]:
                 price = self.products[name]["price"]
                 self.cart[name] = {"price": price, "quantity": qty}
 
@@ -30,7 +33,8 @@ class BeautyStore:
                 print("Added to cart successfully")
 
             else:
-                print("Not enough stock")
+                print(f"We have only {self.products[name]["quantity"]} quantity left please order under it",)
+                # print("we have only 10 qty")
         else:
             print("Product not found")
 
@@ -83,3 +87,4 @@ while True:
 
     else:
         print("Invalid choice")
+
