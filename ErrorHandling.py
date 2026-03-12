@@ -46,7 +46,7 @@
 #         print("Program finished")
 
 
-# Practice Code
+# # Practice Code
 
 balance =1000
 while True:
@@ -65,11 +65,6 @@ while True:
         print("Invalid input",s)
 
     except Exception as e:# while True :
-#     try : 
-#         num = int(input("Enter your number\n"))
-#         print(10/num) 
-#     except:
-#         print("kuch to error aaya hai fix karde")
         print("Transaction Failed",e)
 
     else :

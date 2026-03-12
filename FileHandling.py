@@ -23,19 +23,19 @@
 
 # Read file
 
-# file = open("file.txt","r")
+# file = open("example.txt","r")
 # name= file.read()
 # print(name)
 # file.close()
 
 # Write File (write file karne se jo purana data rahega vo gayab hojayega)
-# file = open("file.txt","w")
-# file.write("Ham aajse File Handling sikh rahe hai")
+# file = open("example.txt","w")
+# file.write("My name is Manju")
 # file.close()
 
 #append
-# file = open("file.txt","a")
-# file.write("\nHam Ranju Manju and shruti Sarthak available hai")
+# file = open("example.txt","a")
+# file.write("\nMy name is Sarthak")
 # file.close()
 
 
@@ -44,53 +44,54 @@
 # - ye safe mode hai
 
 
-# with open("file.txt","r") as sumer:
-#     content = sumer.read()
-#     print(content)
+# with open("example.txt","a") as doc:
+#     doc.write("\nMy name is Aman")
+
 
 
 
 # ================================================
 
 # Stored Name
+
 # studentName = input("Enter Student Name")
 
-# with open("file.txt","a") as db:
+# with open("example.txt","a") as db:
 #     db.write(f"\n{studentName}")
 
 
 # Read all data
 
-# with open("file.txt","r") as db:
+# with open("example.txt","r") as db:
 #     content = db.read()
 #     print(content)
 
 # Read single line
 
-# with open("file.txt","r") as db:
+# with open("example.txt","r") as db:
 #     content = db.readline()
 #     print(content)
 
 # Read multiple lines
 
-# with open("file.txt","r") as db:
+# with open("example.txt","r") as db:
 #     content = db.readlines()
-#     print(content)
+#     print(content[1])
 
 
 # create file 
 
-# with open("Shrutifile.txt","x") as db:
-#     db.write("Hi myself shruti this is my first file")
+# with open("tejaswini.txt","x") as db:
+#     db.write("Hi myself ranju this is my first file")
 #     print("Filed created and data added")
 
 
-with open("Screenshot 2026-02-09 224836.png","rb") as db:
+with open("photo-1485470733090-0aae1788d5af.jpg","rb") as db:
     content=db.read()
     print(content)
 
 
-with open("sir.png","wb") as db:
+with open("Hello.jpg","wb") as db:
     db.write(content)
 
      

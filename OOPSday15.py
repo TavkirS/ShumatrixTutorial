@@ -75,7 +75,7 @@ class Car():
     withoutac=False
 
 # Har object apna alag identity rakhta hai
-# object bolete class ka real use 
+# object boleto class ka real use 
 
 # bmw = Car()
 # print(bmw.color2)
@@ -89,23 +89,23 @@ class Car():
 # used to perform an action on object.
 # Self current object ko refer karta hai 
 
-# class Car():
-#     color ="Red" # this is variable/attribute
-#     wheels = 4  # this is variable/attribute
+class Car():
+    color ="Red" # this is variable/attribute
+    wheels = 4  # this is variable/attribute
 
-#     def carDrive(self,name):
-#         self.name1=name
-#         print("Car Start",self.name1)
+    def carDrive(self,name):
+        self.name1=name
+        print("Car Start",self.name1)
 
-#     def acOn(self):
-#         print("AC on")
+    def acOn(self):
+        print("AC on")
 
-#     def soundON(self):
-#         print("Music ON")
+    def soundON(self):
+        print("Music ON")
 
-# bmw = Car()
-# bmw.carDrive("Kunali")
-# bmw.acOn()
+bmw = Car()
+bmw.carDrive("Kunali")
+bmw.acOn()
 
 
 # Constructer
@@ -172,7 +172,7 @@ bmw.Onstand()
 
 # Method Overiding(Most Common)
 
-class Animal():
+class Cat():
     def sound(self):
         print("Animal makes sound")
 
@@ -181,7 +181,7 @@ class dog():
     def sound(self):
         print("Dog Barking")
     
-a = Animal()
+a = Cat()
 d = dog()
 
 a.sound()
@@ -203,7 +203,7 @@ d.sound()
 # 1) Kuch incomplete methods hote hai 
 # 2) Child class ko complete karna hota hai
 
-# In python to implement abstact class need use:
+# In python to implement abstact class need to use:
 from abc import ABC, abstractmethod
 
 # A method without body 
@@ -214,54 +214,55 @@ def area(self):
 
 # ==========================
 
-# Abstract Class
-from abc import ABC, abstractmethod
+# # Abstract Class
+# from abc import ABC, abstractmethod
 
-class Animal(ABC):
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+#     @abstractmethod
+#     def color(self):
+#         pass
 
-    def sound(self):
-        pass
+# # Child Class
 
-    @abstractmethod
-    def color(self):
-        pass
+# class Dog(Animal):
+#     def sound(self):
+#         print("My color is red ")
 
-# Child Class
+#     def color(self):
+#         print("My color is red ")
 
-class Dog(Animal):
+# # create Object
 
-    def color(self):
-        print("My color")
+# d= Dog()
+# d.sound()
+# d.color()
 
-# create Object
+# # Abstract class ka ham direct object bana nhi sakte 
 
-d= Dog()
-d.sound()
-d.color()
+# from abc import ABC, abstractmethod
 
-# Abstract class ka ham direct object bana nhi sakte 
+# class Payment(ABC):
 
-from abc import ABC, abstractmethod
+#     @abstractmethod
+#     def pay(self,amount):
+#         pass
 
-class Payment(ABC):
+# class GooglePay(Payment):
 
-    @abstractmethod
-    def pay(self,amount):
-        pass
+#     def pay(self, amount):
+#         print("Paid amount",amount, "To shruti")
 
-class GooglePay(Payment):
+# class NetBanking(Payment):
+#     def pay(self, amount):
+#         print("Paid amount",amount, "To MAnju")
 
-    def pay(self, amount):
-        print("Paid amount",amount, "To shruti")
-
-class NetBanking(Payment):
-    def pay(self, amount):
-        print("Paid amount",amount, "To MAnju")
-
-paid=GooglePay()
-paid1=NetBanking()
-paid1.pay(5000)
-paid.pay(5000)
+# paid=GooglePay()
+# paid1=NetBanking()
+# paid1.pay(15000)
+# paid.pay(5000)
 
 
 
@@ -286,25 +287,25 @@ paid.pay(5000)
 # __name           => Private         Strong Protection  
 
 
-# class Bank():
+class Bank():
 
-#     def __init__(self):
-#         self.__balance=5000
+    def __init__(self):
+        self.__balance=5000
     
-#     # with the help of getter and setter
+    # with the help of getter and setter
 
-#     def get_bal(self):
-#         return self.__balance
+    def get_bal(self):
+        return self.__balance
     
-#     def deposit(self,amount):
-#         if amount > 0:
-#             self.__balance += amount
+    def set_bal(self,amount):
+        if amount > 0:
+            self.__balance += amount
 
 
-# icc=Bank()
-# print(icc.get_bal())
-# icc.deposit(5000)
-# print(icc.get_bal())
+icc=Bank()
+print(icc.get_bal())
+icc.set_bal(20000)
+print(icc.get_bal())
 
 
 
